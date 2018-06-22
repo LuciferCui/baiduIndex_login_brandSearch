@@ -82,7 +82,7 @@ if __name__ == "__main__":
     else:
         raise Exception(u"key匹配失败")
 
-    password_unencrypt = "cuiliang188"
+    password_unencrypt = "xxxxxxxx"
     rsakey = RSA.importKey(pubkey)
     cipher = PKCS1_v1_5.new(rsakey)
     password = base64.encodestring(cipher.encrypt(password_unencrypt))
@@ -107,7 +107,7 @@ if __name__ == "__main__":
         "logLoginType":"pc_loginBasic",
         "idc":"",
         "loginmerge":True,
-        "username":"cuiliang188@163.com",
+        "username":"xxxxxxxx@163.com",
         "password":password,
         "rsakey":key,
         "crypttype":12,
